@@ -77,15 +77,67 @@
                                     <action selector="backButtonPressed:" destination="eoh-Qm-KcJ" eventType="touchUpInside" id="wnl-An-hxN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMd-Ii-xVy">
+                                <rect key="frame" x="133.5" y="406" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ADR-dr-TaN"/>
+                                    <constraint firstAttribute="width" constant="147" id="bCG-CC-Gij"/>
+                                </constraints>
+                                <state key="normal" title="Load 3rd Screen"/>
+                                <connections>
+                                    <action selector="loadThirdScreenPressed:" destination="eoh-Qm-KcJ" eventType="touchUpInside" id="RxF-g7-1gd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jMd-Ii-xVy" firstAttribute="centerY" secondItem="2GM-lA-jqI" secondAttribute="centerY" id="AXr-Yc-EtG"/>
+                            <constraint firstItem="jMd-Ii-xVy" firstAttribute="centerX" secondItem="2GM-lA-jqI" secondAttribute="centerX" id="dqL-s0-M1E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rMr-yM-ucm"/>
                     </view>
                     <navigationItem key="navigationItem" id="Edv-zU-Bv6"/>
+                    <connections>
+                        <segue destination="gaQ-DO-km5" kind="showDetail" identifier="PlaySongVCSegue" id="0Ry-yQ-XTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaB-Eb-WeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="136"/>
+            <point key="canvasLocation" x="845" y="136"/>
+        </scene>
+        <!--Play SongVC-->
+        <scene sceneID="Ep2-hU-Rym">
+            <objects>
+                <viewController id="gaQ-DO-km5" customClass="PlaySongVC" customModule="Swapping_Screens_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AHc-Sk-KpY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHj-1O-6wd">
+                                <rect key="frame" x="90" y="52" width="234" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="73w-ag-S88"/>
+                                    <constraint firstAttribute="height" constant="21" id="NSt-lp-Eqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hHj-1O-6wd" firstAttribute="centerX" secondItem="AHc-Sk-KpY" secondAttribute="centerX" id="6P1-NU-cvI"/>
+                            <constraint firstItem="hHj-1O-6wd" firstAttribute="top" secondItem="jhJ-SF-38N" secondAttribute="top" constant="52" id="tek-aj-kEY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jhJ-SF-38N"/>
+                    </view>
+                    <connections>
+                        <outlet property="songTitleLabel" destination="hHj-1O-6wd" id="qOH-nr-20T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7I-0d-urO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579.7101449275362" y="135.9375"/>
         </scene>
     </scenes>
 </document>

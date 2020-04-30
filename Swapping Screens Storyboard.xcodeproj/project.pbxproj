@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD01A211245AB2D3005BFFA1 /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01A210245AB2D3005BFFA1 /* PlaySongVC.swift */; };
 		CDA557C1245A27D7003DA972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA557C0245A27D7003DA972 /* AppDelegate.swift */; };
 		CDA557C3245A27D7003DA972 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA557C2245A27D7003DA972 /* SceneDelegate.swift */; };
 		CDA557C5245A27D7003DA972 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA557C4245A27D7003DA972 /* LoginVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD01A210245AB2D3005BFFA1 /* PlaySongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 		CDA557BD245A27D7003DA972 /* Swapping Screens Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapping Screens Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA557C0245A27D7003DA972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDA557C2245A27D7003DA972 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				CDA557C9245A27E4003DA972 /* Assets.xcassets */,
 				CDA557CB245A27E4003DA972 /* LaunchScreen.storyboard */,
 				CDA557CE245A27E4003DA972 /* Info.plist */,
+				CD01A210245AB2D3005BFFA1 /* PlaySongVC.swift */,
 			);
 			path = "Swapping Screens Storyboard";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDA557C5245A27D7003DA972 /* LoginVC.swift in Sources */,
+				CD01A211245AB2D3005BFFA1 /* PlaySongVC.swift in Sources */,
 				CDA557C1245A27D7003DA972 /* AppDelegate.swift in Sources */,
 				CDA557D5245A3889003DA972 /* MusicListVC.swift in Sources */,
 				CDA557C3245A27D7003DA972 /* SceneDelegate.swift in Sources */,
