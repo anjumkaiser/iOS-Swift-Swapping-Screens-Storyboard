@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="width" constant="108" id="g3v-Tb-kx4"/>
                                 </constraints>
                                 <state key="normal" title="Login Now"/>
+                                <connections>
+                                    <segue destination="eoh-Qm-KcJ" kind="show" id="h7Q-0v-uiB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -63,11 +66,22 @@
             <objects>
                 <viewController id="eoh-Qm-KcJ" customClass="MusicListVC" customModule="Swapping_Screens_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2GM-lA-jqI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDD-9b-cbI">
+                                <rect key="frame" x="93" y="109" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="eoh-Qm-KcJ" eventType="touchUpInside" id="wnl-An-hxN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rMr-yM-ucm"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Edv-zU-Bv6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaB-Eb-WeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
